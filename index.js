@@ -48,3 +48,10 @@ Mss.addEventListener("click", () => {
   alert("Your Response have Sumbmitted❤️");
   Mss.reset();
 })
+
+
+
+document.querySelector("body").addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  alert(" 👉 Right-click is disabled on this page😍");
+});
