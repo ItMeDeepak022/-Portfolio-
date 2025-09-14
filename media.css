@@ -1,0 +1,250 @@
+@media only  screen and (min-width:220px) and (max-width:575px) 
+{
+
+
+    .menu{
+        display: flex;
+        right:5px;
+    }
+/* ----------------------------------Slider */
+
+  .Slider{
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    background-color:#000000de;
+    z-index: 999;
+    top: 81px;
+    left: -100% ;
+    transition: 0.6s;
+    display: flex;
+  }
+  .HideSlider{
+   left: 0px !important;
+}
+
+.Slider>ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 15px 0px;
+}
+.Slider>ul>li{
+    /* width: 82%; */
+    list-style: none;
+    transition: 0.2s;
+    padding:8px 20px;
+}
+.Slider>ul>li>a{
+    color: cyan;
+    background: none !important;
+    font: size 25px;
+    font-weight: normal;
+}
+.Slider>ul>li>a{
+ border: none;
+}
+
+.Slider > ul > li:has(> a:hover) {
+  background-color: purple;
+}
+
+    /* ----------------------------------------------------------- */
+    .r1{
+        flex-direction: column;
+    }
+    .r1>.c1{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .r1>.c1>b>a{
+        padding-left: 10px;
+    }
+    .r1>.c2{
+        display: none;
+    }
+    .r2{
+        flex-direction: column-reverse;
+    }
+   .r2c1{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0px;
+    /* border: 1px solid red ; */
+   }
+   .r2c1 .set{
+    width: 100%;
+    height:400px;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 0px;
+   gap:20px;
+   /* border: 1px solid red; */
+   }
+   .r2c1 .set h1{
+    font-size: 29px;
+   }
+
+   .r2c2{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid red; */
+   }
+.circle{
+   top:55%;
+   
+  }
+
+
+.about{
+    flex-direction:column;
+    gap: 50px;
+    
+   }
+    .aboutc1{
+     width: 100%;
+     height:300px;
+     /* background-color:red; */
+   }
+
+.aboutc2{
+    width: 100%;
+    padding: 20px 0px;
+    }
+    .aboutc2>h1{
+    text-align: center;
+    padding: 0px;
+}
+.aboutc2>p{
+    padding: 10px 20px;
+    color: orangered;font-weight: bold;
+}
+.aboutc2>b{
+    display: inline-block;
+    text-align:justify;
+    padding:5px 15px;
+    font-weight: normal;
+    font-size:18px;
+}
+ .Service{
+    max-width: 100%;
+    /* height: 410px; */
+    /* border: 1px solid red; */
+    
+}
+.Service>#S{
+    /* background-color: red; */
+    padding: 20px 0px;
+}
+
+.ser{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 0px;
+}
+.ser .sc1{
+    width:96%;
+    height:300px;
+    margin:0px 5px;
+    border: 1px solid cyan;
+}
+.sc1:hover{
+    box-shadow: 0px 0px 20px 5px purple;
+   transition: 0.5ms;
+   
+}
+.r3>h2{
+    padding:30px 0px;
+}
+.S1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+.r3c1{
+    width: 100%;
+    height: 300px;
+    background-color:black;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.Service{
+    padding-top:20px;
+    gap: 40px;
+}
+.Service>h2{
+    text-align: center;
+}
+
+.MainContainer{
+    padding-top: 40px;
+}
+.contact-container {
+    margin: 0px 5px;
+    
+}
+.r4>h2{
+    padding: 30px 0px;
+}
+.Josh{
+    padding:5px 0px;
+}
+.MainContainer{
+    
+    padding-top: 105px;
+   
+}
+.certificates{
+    flex-direction: column;
+    margin:5px;
+      gap:60px;
+}
+.certificates>div{
+        width: 100%;
+        border: 2px solid purple;
+        }
+        .certificates>div:hover{
+        box-shadow: 0px 0px 25px 5px cyan;
+        transform: translateY(-10px);
+        transition: 0.6s ease;
+        
+    }
+
+    .ser11{
+        flex-direction: column;
+    }
+    .ser11 .sc11{
+        width:94%;
+        margin: 0 3%;
+        
+    }
+    .sc11 div{
+    width: 100%;
+    height:200px;
+    background-color: #fff; 
+}
+.sc11 figure img{
+    width: 100%;
+    object-fit:cover;
+}
+.intern-box{
+    border: 2px solid purple;
+}
+.intern-container .intern-box:hover {
+      transform: translateY(-20px);
+      box-shadow: 0px 0px 20px 10px cyan;
+      transition: 0.6s ease;
+       
+    }
+
+}

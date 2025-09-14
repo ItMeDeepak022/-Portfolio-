@@ -1,21 +1,50 @@
-let btn=document.querySelector('button');
-btn.addEventListener('click',function()
-{
-let h=document.querySelector('h2');
-// h.innerText= ;
 
-let body=document.querySelector('body');
-body.style.backgroundColor='black';
+// -------------------------Dark Mode------------------------
 
-let div=document.querySelector('div');
-div.style.backgroundColor='white';
+let DarkMode = document.querySelector(".darkMode .fa-moon");
+
+let AllElement = document.querySelectorAll("*");
+
+DarkMode.addEventListener("click", () => {
+    
+  AllElement.forEach((el) => {
+    el.classList.toggle("DarkMode");
+  })
+
+  Menu.classList.toggle("IconColor");
+  DarkMode.classList.toggle("IconColor");
+  DarkMode.classList.toggle("fa-moon");
+  DarkMode.classList.toggle("fa-sun");
+})
+
+//   ---------------------end-----------------------
+
+// ----------------------Slider-------
+
+let Menu = document.querySelector(".menu .fa-bars");
+let Slid = document.querySelector(".Slider");
+Menu.addEventListener("click", () => {
+  Slid.classList.toggle("HideSlider");
+  Menu.classList.toggle("fa-bars");
+  Menu.classList.toggle("fa-xmark");
+})
+
+// -------------hide Slider at click on the li-----------
+
+let li = document.querySelectorAll(".Slider ul li");
+li.forEach((e) => {
+  e.addEventListener("click", () => {
+    Slid.classList.toggle("HideSlider");
+    Menu.classList.toggle("fa-bars");
+    Menu.classList.toggle("fa-xmark");
+  })
+})
 
 
-});
-
-let btn1=document.querySelector('#button');
-btn1.addEventListener('click',function()
-{
-let body=document.querySelector('body');
-body.style.backgroundColor='white';
-});
+let Mss = document.querySelector("form .btn");
+console.log(Mss);
+Mss.addEventListener("click", () => {
+  
+  alert("Your Response have Sumbmitted❤️");
+  Mss.reset();
+})
