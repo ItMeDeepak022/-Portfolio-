@@ -274,22 +274,27 @@ ul>li>a{
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
+   background-color: purple;
   } 
-
-
+ 
 
 
 
 
 
 .r2c2 .circle img{
-    width:  300px;
-    height: 300px;
+    width: 290px;
+    height:290px;
     border: none;
     outline: none;
     object-fit: contain;
+    border-radius: 50%;
     background-color: #fff;
-   }
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    border: 20px solid purple;
+    }
 
 
 
@@ -317,14 +322,20 @@ ul>li>a{
    left: 50%;
    top: 50%;
    transform: translate(-50%,-50%);
+   background-color: purple;
   }
 .aboutc1 .cir img{
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
      border: none;
      outline: none;
      object-fit: contain;
+     border-radius: 50%;
     background-color: #fff;
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    border: 20px solid purple;
    }
    .aboutc2{
     width: 60%;
