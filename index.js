@@ -6,7 +6,7 @@ let DarkMode = document.querySelector(".darkMode .fa-moon");
 let AllElement = document.querySelectorAll("*");
 
 DarkMode.addEventListener("click", () => {
-    
+
   AllElement.forEach((el) => {
     el.classList.toggle("DarkMode");
   })
@@ -42,11 +42,11 @@ li.forEach((e) => {
 
 
 let Mss = document.querySelector("form .btn");
-console.log(Mss);
+
 Mss.addEventListener("click", () => {
-  
+
   alert("Your Response have Sumbmitted❤️");
-  Mss.reset();
+
 })
 
 

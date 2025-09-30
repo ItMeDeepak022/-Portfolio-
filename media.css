@@ -150,14 +150,14 @@
     padding: 20px 0px;
 }
 .ser .sc1{
-    width:96%;
-    height:300px;
-    margin:0px 5px;
+    width:90%;
+    height:350px;
+    margin:0px 5%;
     border: 1px solid cyan;
 }
 .sc1:hover{
     box-shadow: 0px 0px 20px 5px purple;
-   transition: 0.5ms;
+    transition: 0.8s ease;
    
 }
 .r3>h2{
