@@ -43,15 +43,15 @@ li.forEach((e) => {
 
 let Mss = document.querySelector("form .btn");
 
-Mss.addEventListener("click", () => {
-
+Mss.addEventListener("click", (e) => {
+  
   alert("Your Response have Sumbmitted❤️");
-
+  e.target.reset();
 })
 
 
 
 document.querySelector("body").addEventListener("contextmenu", (e) => {
   e.preventDefault();
-  alert(" 👉 Right-click is disabled on this page😍");
+   
 });
