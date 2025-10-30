@@ -441,7 +441,8 @@ ul>li>a{
     height: 50px;
     background-color: green;
     border-radius: 20px;border: none;position: relative;
-    left: 50%;transform: translate(-50%);top: 5px;bottom:50px;
+    left: 50%;transform: translate(-50%);top: 5px;
+    bottom:50px;
 }
 .sc11 div button a{
     text-decoration: none;
