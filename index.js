@@ -52,7 +52,7 @@ function formSubmit(e) {
   }
 
 
-   fetch("https://portfolio-backend-deploy-nu.vercel.app/Info", {
+   fetch("https://portfolio-backend-deploy-nu.vercel.app/api/Info", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
