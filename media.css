@@ -206,8 +206,8 @@
 }
 .certificates{
     flex-direction: column;
-    margin:5px;
-      gap:60px;
+     margin:5px;
+      gap:35px;
 }
 .certificates>div{
         width: 100%;

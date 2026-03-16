@@ -1,6 +1,7 @@
 
 // -------------------------Dark Mode------------------------
 
+
 let DarkMode = document.querySelector(".darkMode .fa-moon");
 
 let AllElement = document.querySelectorAll("*");
@@ -41,17 +42,40 @@ li.forEach((e) => {
 })
 
 
-let Mss = document.querySelector("form .btn");
+function formSubmit(e) {
+  e.preventDefault()
+  let obj = {
+    name: e.target.name.value,
+    email: e.target.email.value,
+    mobileNo: e.target.mobileNo.value,
+    message: e.target.message.value,
+  }
 
-Mss.addEventListener("click", (e) => {
-  
-  alert("Your Response have Sumbmitted❤️");
-  e.target.reset();
-})
+
+   fetch("https://portfolio-backend-deploy-nu.vercel.app/Info", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(obj)
+  })
+    .then(res => res.json())
+    .then(data => {
+       if(data.status){
+        alert(data.message)
+        e.target.reset()
+       }
+       else{
+        alert(data.message)
+       }
+    })
 
 
+    .catch(err => console.log(err));
+
+}
 
 document.querySelector("body").addEventListener("contextmenu", (e) => {
   e.preventDefault();
-   
+
 });
