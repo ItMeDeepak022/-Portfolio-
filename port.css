@@ -434,7 +434,9 @@ ul>li>a{
 }
 .sc11 div p{
     padding: 5px;
+    font-size: 18px;
     color: purple;
+    text-align: justify;
 }
 .sc11 div button{
     width:150px;
